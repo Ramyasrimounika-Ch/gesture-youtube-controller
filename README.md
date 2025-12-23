@@ -63,8 +63,8 @@ This project uses a webcam to recognize hand gestures and maps them to media con
 │   ├── Volume up.csv
 │   ├── Volume down.csv
 │   ├── pause.csv
-│   └── final_dataset.csv
-├── sumith_ai_model_2.keras   # Trained gesture recognition model
+|── final_dataset.csv
+├── main_model.keras   # Trained gesture recognition model
 ├── merging.py               # Dataset merging & preprocessing
 ├── model.ipynb              # Model training notebook
 ├── test.py                  # Gesture-controlled YouTube system
@@ -73,16 +73,19 @@ This project uses a webcam to recognize hand gestures and maps them to media con
 # How to Run
 
 1)Install Dependencies
+
 ```bash
 pip install opencv-python mediapipe tensorflow pyautogui numpy
 ```
 
 2)Update Model Path
+
 ```python
 model = tf.keras.models.load_model("path_to_your_model.keras")
 ```
 
 3)Run the Application
+
 ```bash
 Run the Application
 ```
